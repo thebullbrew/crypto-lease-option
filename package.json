@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0",
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.0"
+  },
+  "description": "Rent-to-own lease-option agreement as a smart contract — tenant rent payments build purchase credits on Ethereum",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "hardhat": "^2.22.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ethereum",
+    "real-estate",
+    "lease-option",
+    "rent-to-own",
+    "smart-contracts",
+    "viem",
+    "hardhat"
+  ],
+  "license": "MIT",
+  "name": "@thebullbrew/crypto-lease-option",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebullbrew/crypto-lease-option.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "compile": "npx hardhat compile",
+    "deploy": "tsx src/deploy.ts",
+    "pay-rent": "tsx src/pay-rent.ts",
+    "exercise": "tsx src/exercise.ts",
+    "status": "tsx src/status.ts"
+  },
+  "version": "0.1.0"
+}
